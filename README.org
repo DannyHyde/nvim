@@ -1,0 +1,12 @@
+#+TITLE: Neovim Configuration
+#+Author: Danny Hyde
+#+Email: danny@dannyhyde.co.uk
+#+Description: Nvim configuration files
+
+** Usage
+
+Yes, I am a weirdo! I use both Emacs *AND* Nvim...
+
+This config is solely geared towards development and programing in general. So it's pretty much just
+the LSP, Linters and Checkers for the various languages that I'm using or trying to learn. As well
+as the odd plugin to make life a little easier.

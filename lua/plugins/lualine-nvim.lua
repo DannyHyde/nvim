@@ -1,0 +1,33 @@
+local config = function()
+    local theme = require('lualine.themes.powerline_dark')
+
+    -- set transparency
+    theme.normal.c.bg = nil
+    theme.insert.c.bg = nil
+    theme.visual.c.bg = nil
+    theme.replace.c.bg = nil
+    theme.inactive.c.bg = nil
+    theme.command.c.bg = nil
+
+    require('lualine').setup({
+        options = {
+            theme = theme,
+            globalstatus = true,
+        },
+        tabline = {
+            lualine_a = { 'mode' },
+            lualine_b = { 'branch', 'diff', 'diagnostics' },
+            lualine_c = { 'filename' },
+            lualine_x = { 'encoding', 'fileformat', 'filetype' },
+            lualine_y = { 'progress' },
+            lualine_z = { 'location' },
+        },
+        sections = {},
+    })
+end
+
+return {
+    'nvim-lualine/lualine.nvim',
+    lazy = false,
+    config = config,
+}
