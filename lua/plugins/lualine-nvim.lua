@@ -36,6 +36,7 @@ local config = function()
     require('lualine').setup {
         options = {
             theme = bubbles_theme,
+            globalstatus = true,
             component_separators = '|',
             section_separators = { left = '', right = '' },
         },

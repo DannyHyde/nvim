@@ -19,7 +19,7 @@ local config = function()
 			--'dockerfile',
 			--'go',
 			"html",
-			'javscript',
+			-- 'javscript',
 			"json",
 			"lua",
 			"python",

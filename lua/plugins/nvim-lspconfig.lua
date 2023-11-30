@@ -1,19 +1,14 @@
+local on_attach = require("util.lsp").on_attach
+local diagnostic_signs = require("util.lsp").diagnostic_signs
+
 local config = function()
 	require("neoconf").setup({})
 
 	local lspconfig = require("lspconfig")
 
-	local signs = { Error = " ", Warn = " ", Hint = "󱧤", Info = "" }
-
-	for type, icon in pairs(signs) do
+	for type, icon in pairs(diagnostic_signs) do
 		local hl = "DiagnosticSign" .. type
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-	end
-
-	local on_attach = function(client, bufnr)
-		local opts = { noremap = true, silent = true, buffer = bufnr }
-
-		vim.keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts)
 	end
 
 	-- lua
@@ -35,13 +30,35 @@ local config = function()
 		},
 	})
 
+	-- python
+	lspconfig.pyright.setup({
+		-- capabilities = capabilities,
+		on_attach = on_attach,
+		settings = {
+			pyright = {
+				disableOrganizeImports = false,
+				analysis = {
+					useLibraryCodeForTypes = true,
+					autoSearchPaths = true,
+					diaggnosticMode = "workspace",
+					autoImportCompletions = true,
+				},
+			},
+		},
+	})
+
+	-- lua
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
+	-- python
+	local flake8 = require("efmls-configs.linters.flake8")
+	local black = require("efmls-configs.formatters.black")
 
 	-- efm server
 	lspconfig.efm.setup({
 		filetypes = {
 			"lua",
+			"python",
 		},
 		init_options = {
 			documentFormatting = true,
@@ -54,6 +71,7 @@ local config = function()
 		settings = {
 			languages = {
 				lua = { luacheck, stylua },
+				python = { flake8, black },
 			},
 		},
 	})
