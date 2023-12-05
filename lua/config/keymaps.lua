@@ -13,7 +13,7 @@ local api = vim.api
 -----------------
 
 -- Better ESC
-map('i', 'kj', '<Esc>')
+map('i', 'kk', '<Esc>')
 
 -- clear search
 map('n', '<leader>c', ':nohl<CR>')
