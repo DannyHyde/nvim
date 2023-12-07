@@ -148,6 +148,16 @@ local config = function()
   -- vue
   -- TODO
 
+  -- -- zk (zettle notes) Still working out the whole ZK flow.
+  -- lspconfig.zk.setup({
+  --   capabilities = capabilities,
+  --   on_attach = on_attach,
+  --   default_config = {
+  --     cmd = { "zk", "lsp" },
+  --     filetypes = {"markdown"},
+  --   }
+  -- })
+
 	local shellcheck = require("efmls-configs.linters.shellcheck")
 	local shfmt = require("efmls-configs.formatters.shfmt")
 	local eslint_d = require("efmls-configs.linters.eslint_d")

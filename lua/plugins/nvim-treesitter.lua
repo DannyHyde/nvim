@@ -32,6 +32,7 @@ local config = function()
 			"typescript",
 			--'vue',
 			--'yaml',
+      -- "zk" Still working out the whole zk flow
 		},
 		auto_install = true,
 		highlight = {
