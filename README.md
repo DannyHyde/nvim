@@ -30,6 +30,7 @@ can be found [here](https://github.com/radleylewis/nvim).
     - [efmls-configs-nvim](https://github.com/creativenull/efmls-configs-nvim)
     - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
     - cmp-nvim-lsp
+
     Setup for `Lua`, `Python` and `Typescript`
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
     - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
