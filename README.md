@@ -5,8 +5,10 @@ This is my configuration of NeoVim. Being relatively new to neovim I followed th
 [Radley Lewis](https://github.com/radleylewis). Installed plugins:
 
 - [Lazy.nvim](https://github.com/folke/lazy.nvim) - For plugin management.
-- [Catppuccin](https://github.com/catppuccin/nvim) - Theme.
-- [Which-key](https://github.com/folke/which-key.nvim) - Keymap menu
-- [Nvim-Tree](https://github.com/nvim-tree/nvim-tree.lua) - File explorer
-- [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
+- [catppuccin.nvim](https://github.com/catppuccin/nvim) - Theme.
+- [which-key.nvim](https://github.com/folke/which-key.nvim) - Keymap menu.
+- [nvim-tree.nvim](https://github.com/nvim-tree/nvim-tree.lua) - File explorer.
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder.
+- [comment.nvim](https://github.com/numToStr/Comment.nvim) - Comment lines/blocks easily.
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Adds indentation guides.
 
