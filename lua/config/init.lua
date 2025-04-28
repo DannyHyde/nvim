@@ -21,7 +21,27 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+require("config.globals")
+require("config.options")
 
-require ("lazy").setup('plugins')
+local opts = {
+  defaults = {
+    lazy = true,
+  },
+  rtp = {
+    disabled_plugins = {
+      "gzip",
+      "matchit",
+      "netrwPlugin",
+      "tarPlugin",
+      "tohtml",
+      "tutor",
+      "zipPlugin",
+    },
+    change_detection = {
+      notify = false,
+    },
+  },
+}
+
+require ("lazy").setup("plugins", opts)
