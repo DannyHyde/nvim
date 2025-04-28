@@ -5,3 +5,4 @@ This is my configuration of NeoVim. Being relatively new to neovim I followed th
 [Radley Lewis](https://github.com/radleylewis). Installed plugins:
 
 [Lazy.nvim](https://github.com/folke/lazy.nvim) - For plugin management.
+[Catppuccin](https://github.com/catppuccin/nvim) - Theme.
