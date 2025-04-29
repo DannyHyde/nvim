@@ -16,3 +16,4 @@ This is my configuration of NeoVim. Being relatively new to neovim I followed th
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) - Nerd font glyphs.
 - [vim-illuminate.nvim](https://github.com/RRethy/vim-illuminate) - Illuminate instances of word under cursor.
 - [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) - Highlight yanked text.
+- [noice.nvim](https://github.com/folke/noice.nvim) - Neovim notifications.
