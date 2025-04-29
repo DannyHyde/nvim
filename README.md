@@ -15,3 +15,4 @@ This is my configuration of NeoVim. Being relatively new to neovim I followed th
 - [nvim-ts-autotag.nvim](https://github.com/windwp/nvim-ts-autotag) - Auto close/rename (html) tags.
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) - Nerd font glyphs.
 - [vim-illuminate.nvim](https://github.com/RRethy/vim-illuminate) - Illuminate instances of word under cursor.
+- [vim-highlightedyank](https://github.com/machakann/vim-highlightedyank) - Highlight yanked text.
